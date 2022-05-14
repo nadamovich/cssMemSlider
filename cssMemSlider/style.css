@@ -1,10 +1,20 @@
+body {
+    margin: 0;
+}
 .wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100vw;
+    height: 10vh;
 }
 .title {
+    color: black;
 }
 .control-elements {
 }
 .elements-list {
+    list-style: none;
 }
 .element {
 }
@@ -21,6 +31,24 @@
 .text {
 }
 .control-labels {
+    display: flex;
+    gap: 0.7rem;
 }
 .control-button {
+    height: 1.5rem;
+    width: 1.5rem;
+    background-color: aqua;
+    display: inline-block;
+    border: 0.5rem solid transparent;
+    cursor: pointer;
+    transition: .3s;
+}
+.control-button:hover{
+    background-color: rgb(43, 110, 255);
+}
+#slide1:checked ~ .control-labels .control-button:nth-child(1),
+#slide2:checked ~ .control-labels .control-button:nth-child(2),
+#slide3:checked ~ .control-labels .control-button:nth-child(3),
+#slide4:checked ~ .control-labels .control-button:nth-child(4) {
+    background-color: blue;
 }
