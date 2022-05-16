@@ -84,11 +84,6 @@ body {
 .text {
     width: 100%;    
 }
-@media (max-width: 425px) {
-    .text {
-        text-align: center;
-    }
-}
 .control-labels {
     width: 40vw;
     display: flex;
