@@ -107,7 +107,7 @@ body {
     border-radius: 100%;
     border: 0.5rem solid white;
     cursor: pointer;
-    transition: .3s;
+    transition: .4s;
 }
 @media (max-width: 500px) {
     .control-button{
@@ -117,6 +117,10 @@ body {
 }
 .control-button:hover{
     background-color: rgb(43, 110, 255);
+}
+.control-button:active {
+    height: 1rem;
+    width: 1rem;
 }
 #slide1:checked ~ .text-contol-row .control-labels .control-button:nth-child(1),
 #slide2:checked ~ .text-contol-row .control-labels .control-button:nth-child(2),
